@@ -1,7 +1,7 @@
-
-<div *ngFor="let user of data">
-    <p>id: {{user.id}}</p>
-    <p>name: {{user.name}}</p>
-    <p>data: {{user.date | date:'dd.MM.yyyy'}}</p>
-    <p>id+5: {{user.id | sum}}</p>
-</div>
+<nav>
+  <a routerLink="/">Contact</a>
+  <a routerLink="about">About</a>
+  <a routerLink="item">Item</a>
+</nav>
+<hr>
+<router-outlet></router-outlet>
