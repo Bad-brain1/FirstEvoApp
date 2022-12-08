@@ -7,8 +7,4 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'FirstEvoApp';
-
-  links = ['Main', 'Item'];
-  activeLink = this.links[0];
-
 }
