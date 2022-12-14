@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { Meta, Title } from '@angular/platform-browser';
 
 @Component({
   selector: 'app-root',
@@ -7,4 +8,10 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'FirstEvoApp';
+
+  constructor(private meta:Meta, titleValue:Title){
+    this.meta.addTag({property:'og:desc',content:'root_desc'})
+    titleValue.setTitle(this.title)
+  }
+
 }

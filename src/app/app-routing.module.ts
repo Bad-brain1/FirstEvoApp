@@ -1,11 +1,16 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
-import { BookComponent } from './book/book.component';
+import { AppComponent } from './app.component';
+import { InlineComponent } from './inline/inline.component';
 
 const routes: Routes = [
   {
-    path:'book',
-    component:BookComponent
+    path:'',
+    component:AppComponent
+  },
+  {
+    path:'open-graph',
+    component:InlineComponent
   }
 ];
 
