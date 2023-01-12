@@ -1,17 +1,7 @@
-
-.container{
-    height: 100vh;
-    max-width: 900px;
-    margin: 0 auto;
+.card{
+    margin-bottom: 10px;
+    padding: 0 16px;
+    border-radius: 16px;
     background-color: #f6f6f6;
-}
-
-.map-container {
-    flex-grow: 1;
-    height: 40vh;
-}
-.form{
-
-    width: 300px;
-    margin: 10px auto;
+    border: 1px solid black;
 }

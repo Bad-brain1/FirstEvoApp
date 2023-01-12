@@ -1,12 +1,5 @@
-
-<div class="container">
-  <div class="map">
-    <div id="ol-map" class="map-container"></div>
-  </div>
-
-
-  <form class="form">
-    <input type="text">
-    <button type="button" (click)="message()">добавить метку</button>
-  </form>
+<div class="card" *ngFor="let data of UsersData">
+    <div>{{data.userId}} | {{data.id}}</div>   
+    <div>{{data.title}}</div>
+    <div>{{data.completed}}</div>
 </div>
